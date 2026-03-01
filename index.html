@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy CNS · 100 Q&A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f0f4fa;
+            color: #1a2b3c;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(0,20,40,0.12);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            background: linear-gradient(145deg, #0b2b44, #1f4b6e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+            border-left: 6px solid #1f7faa;
+            padding-left: 1.2rem;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #2c5779;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            padding-left: 1.8rem;
+            border-bottom: 1px solid #cbd6e4;
+            padding-bottom: 0.75rem;
+        }
+        .section-tab {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0 1.5rem;
+            border-bottom: 2px solid #dbe1ec;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4f658a;
+            cursor: pointer;
+            border-radius: 40px 40px 0 0;
+            transition: 0.2s;
+            letter-spacing: 0.3px;
+        }
+        .tab-btn.active {
+            background: #1f4b6e;
+            color: white;
+        }
+        .qa-block {
+            display: none;
+            animation: fade 0.25s ease;
+        }
+        .qa-block.active {
+            display: block;
+        }
+        @keyframes fade { from {opacity:0.3;} to {opacity:1;} }
+
+        .question-card {
+            background: #f9fcff;
+            border: 1px solid #d7e2ed;
+            border-radius: 24px;
+            padding: 1.2rem 1.8rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 10px rgba(0,30,50,0.03);
+        }
+        .q-stem {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #0e3d5e;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .q-num {
+            background: #1f7faa22;
+            color: #116b96;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .mcq-options {
+            margin-left: 2rem;
+            list-style: none;
+        }
+        .mcq-options li {
+            margin: 0.25rem 0;
+            padding: 0.2rem 0;
+        }
+        .answer-box {
+            background: #e3f0fa;
+            padding: 0.8rem 1.5rem;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 0.6rem;
+            font-weight: 500;
+            border-left: 5px solid #1f7faa;
+        }
+        .structured .answer-box {
+            background: #e6f2fe;
+            border-left-color: #3f6b9c;
+        }
+        .ans-label {
+            font-weight: 600;
+            color: #004070;
+            margin-right: 0.4rem;
+        }
+        hr {
+            border: none;
+            border-top: 1.5px dashed #bfd6e9;
+            margin: 2rem 0 1rem;
+        }
+        .footer-note {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #6c86a3;
+            margin-top: 3rem;
+            border-top: 1px solid #cbdae9;
+            padding-top: 1.5rem;
+        }
+        .badge {
+            background: #1f7faa;
+            color: white;
+            font-size: 0.75rem;
+            border-radius: 30px;
+            padding: 0.2rem 0.8rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🧠 central nervous system · 100 Q&A</h1>
+    <div class="subhead">based exclusively on lecture notes — 50 MCQs + 50 structured (with answers)</div>
+
+    <div class="section-tab">
+        <button class="tab-btn active" id="tab-mcq">📋 50 multiple choice</button>
+        <button class="tab-btn" id="tab-structured">📝 50 structured questions</button>
+    </div>
+
+    <!-- ========== MCQ SECTION (50) ========== -->
+    <div id="mcq-section" class="qa-block active">
+        <!-- I'll generate exactly 50 MCQs, numbered 1..50, answers inline. 
+             using the exact Q&A from previous output to maintain 100% alignment -->
+        
+        <div class="question-card"><div class="q-stem"><span class="q-num">1</span> According to the text, the nervous system is anatomically and functionally divided into which two main parts?</div><ul class="mcq-options"><li>a) Somatic and Autonomic</li><li>b) Brain and Spinal Cord</li><li>c) Central and Peripheral</li><li>d) Sensory and Motor</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Central and Peripheral</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">2</span> What is the largest and most developed area of the human brain?</div><ul class="mcq-options"><li>a) Cerebrum</li><li>b) Cerebellum</li><li>c) Diencephalon</li><li>d) Brainstem</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> a) Cerebrum</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">3</span> Which lobe of the cerebrum is primarily concerned with the interpretation and integration of body sensory inputs?</div><ul class="mcq-options"><li>a) Frontal Lobe</li><li>b) Occipital Lobe</li><li>c) Temporal Lobe</li><li>d) Parietal Lobe</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> d) Parietal Lobe</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">4</span> The primary visual cortex for visual information interpretation is located in which lobe?</div><ul class="mcq-options"><li>a) Frontal Lobe</li><li>b) Occipital Lobe</li><li>c) Parietal Lobe</li><li>d) Insula Lobe</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Occipital Lobe</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">5</span> The grooves on the surface of the cerebrum are called:</div><ul class="mcq-options"><li>a) Gyri</li><li>b) Fissures</li><li>c) Sulci</li><li>d) Tracts</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Sulci</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">6</span> Which gyrus on the frontal lobe is known as the Primary Motor Cortex?</div><ul class="mcq-options"><li>a) Postcentral gyrus</li><li>b) Cingulate gyrus</li><li>c) Precentral gyrus</li><li>d) Hippocampus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Precentral gyrus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">7</span> In most people, which hemisphere of the cerebrum is dominant for language and tasks involving symbolic reasoning?</div><ul class="mcq-options"><li>a) The Left Hemisphere</li><li>b) The Right Hemisphere</li><li>c) Both equally</li><li>d) It varies randomly</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> a) The Left Hemisphere</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">8</span> The corpus callosum is the largest set of which type of fibers?</div><ul class="mcq-options"><li>a) Association Fibers</li><li>b) Projection Fibers</li><li>c) Commissural Fibers</li><li>d) Arcuate Fibers</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Commissural Fibers</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">9</span> The Reticular Activating System (RAS), which maintains consciousness and alertness, is predominantly located in the Pons and which other structure?</div><ul class="mcq-options"><li>a) Cerebellum</li><li>b) Thalamus</li><li>c) Medulla Oblongata</li><li>d) Midbrain</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Medulla Oblongata</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">10</span> Which part of the brain is described as the "emotional brain"?</div><ul class="mcq-options"><li>a) The Reticular System</li><li>b) The Limbic System</li><li>c) The Corpus Callosum</li><li>d) The Pineal Gland</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) The Limbic System</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">11</span> The hippocampus, important for learning and memory, is located deep in which lobe?</div><ul class="mcq-options"><li>a) Frontal lobe</li><li>b) Parietal lobe</li><li>c) Occipital lobe</li><li>d) Temporal lobe</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> d) Temporal lobe</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">12</span> According to the text, high, prolonged levels of which hormone are associated with shrinkage of the hippocampus?</div><ul class="mcq-options"><li>a) Melatonin</li><li>b) Dopamine</li><li>c) Cortisol</li><li>d) Oxytocin</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Cortisol</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">13</span> The almond-shaped nuclei with a primary role in detecting threatening stimuli is the:</div><ul class="mcq-options"><li>a) Hippocampus</li><li>b) Thalamus</li><li>c) Amygdala</li><li>d) Cingulate Gyrus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Amygdala</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">14</span> Which part of the diencephalon acts as the "gateway" to the cerebral cortex?</div><ul class="mcq-options"><li>a) Hypothalamus</li><li>b) Thalamus</li><li>c) Epithalamus</li><li>d) Pineal Gland</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Thalamus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">15</span> The body's thermostat and set point for temperature regulation is located in the:</div><ul class="mcq-options"><li>a) Thalamus</li><li>b) Pons</li><li>c) Cerebellum</li><li>d) Hypothalamus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> d) Hypothalamus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">16</span> The text notes that the Blood Brain Barrier is missing in one region to allow it to assess blood conditions directly. This region is the:</div><ul class="mcq-options"><li>a) Medulla Oblongata</li><li>b) Cerebellum</li><li>c) Hypothalamus</li><li>d) Midbrain</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Hypothalamus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">17</span> Which hormone, secreted by the pineal gland, is suppressed by blue light from screens?</div><ul class="mcq-options"><li>a) Cortisol</li><li>b) Dopamine</li><li>c) Melatonin</li><li>d) ADH</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Melatonin</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">18</span> Damage to the substantia nigra of the midbrain has been linked to which disease?</div><ul class="mcq-options"><li>a) Alzheimer's disease</li><li>b) Parkinson's disease</li><li>c) Huntington's disease</li><li>d) Multiple sclerosis</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Parkinson's disease</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">19</span> The corpora quadrigemina, involved in visual and auditory reflexes, is located in the:</div><ul class="mcq-options"><li>a) Cerebellum</li><li>b) Pons</li><li>c) Medulla Oblongata</li><li>d) Midbrain</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> d) Midbrain</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">20</span> The superior colliculi are involved in processing which type of information?</div><ul class="mcq-options"><li>a) Auditory</li><li>b) Olfactory</li><li>c) Visual</li><li>d) Gustatory</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Visual</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">21</span> The cerebellum accounts for about 10% of the brain's volume, yet contains over what percentage of the total number of neurons?</div><ul class="mcq-options"><li>a) 25%</li><li>b) 50%</li><li>c) 75%</li><li>d) 90%</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) 50%</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">22</span> The inner, branching white matter of the cerebellum is called the:</div><ul class="mcq-options"><li>a) Cerebral peduncles</li><li>b) Arbor vitae</li><li>c) Cerebellar peduncles</li><li>d) Corpora quadrigemina</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Arbor vitae</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">23</span> Which structure receives information from proprioceptors to help maintain balance and posture?</div><ul class="mcq-options"><li>a) Cerebrum</li><li>b) Thalamus</li><li>c) Cerebellum</li><li>d) Hypothalamus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Cerebellum</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">24</span> According to the text, which part of the brain is responsible for refining a practiced activity into a learned skilled routine?</div><ul class="mcq-options"><li>a) Cerebrum</li><li>b) Midbrain</li><li>c) Cerebellum</li><li>d) Medulla Oblongata</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Cerebellum</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">25</span> The pons contains two pontine respiratory centers that help fine-tune breathing. What are they?</div><ul class="mcq-options"><li>a) Inspiratory and Expiratory centers</li><li>b) Pneumotaxic and Apneustic centers</li><li>c) Cardiac and Vasomotor centers</li><li>d) Dorsal and Ventral centers</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Pneumotaxic and Apneustic centers</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">26</span> Which cranial nerve is the largest of the 12 pairs and is functionally associated with the pons?</div><ul class="mcq-options"><li>a) Vagus nerve (X)</li><li>b) Facial nerve (VII)</li><li>c) Trigeminal nerve (V)</li><li>d) Vestibulocochlear nerve (VIII)</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Trigeminal nerve (V)</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">27</span> The vital centers for cardiac, vasomotor, and respiratory regulation are located in which part of the brain?</div><ul class="mcq-options"><li>a) Pons</li><li>b) Midbrain</li><li>c) Cerebellum</li><li>d) Medulla Oblongata</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> d) Medulla Oblongata</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">28</span> The phrenic nerve, which controls the diaphragm for inspiration, is formed from fibers of which plexus?</div><ul class="mcq-options"><li>a) Brachial plexus</li><li>b) Lumbar plexus</li><li>c) Cervical plexus</li><li>d) Sacral plexus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Cervical plexus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">29</span> What is the largest nerve in the body, arising from the sacral plexus?</div><ul class="mcq-options"><li>a) Femoral nerve</li><li>b) Radial nerve</li><li>c) Sciatic nerve</li><li>d) Vagus nerve</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Sciatic nerve</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">30</span> The ulnar and median nerves are branches of which plexus?</div><ul class="mcq-options"><li>a) Cervical plexus</li><li>b) Brachial plexus</li><li>c) Lumbar plexus</li><li>d) Sacral plexus</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Brachial plexus</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">31</span> Cerebrospinal fluid (CSF) is a filtrate of what?</div><ul class="mcq-options"><li>a) Lymph</li><li>b) Blood</li><li>c) Interstitial fluid</li><li>d) Cytoplasm</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) Blood</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">32</span> Which of the following is NOT a stated role of CSF in the CNS?</div><ul class="mcq-options"><li>a) Cushioning delicate nervous tissue</li><li>b) Providing buoyancy to the brain</li><li>c) Producing neurotransmitters for synaptic transmission</li><li>d) Exchanging gases, nutrients, and wastes</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Producing neurotransmitters for synaptic transmission</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">33</span> CSF is primarily created by the choroid plexuses located in the:</div><ul class="mcq-options"><li>a) Subarachnoid space</li><li>b) Dural venous sinuses</li><li>c) Ventricles of the brain</li><li>d) Central canal of the spinal cord</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Ventricles of the brain</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">34</span> How many ventricles are there in the brain?</div><ul class="mcq-options"><li>a) Two</li><li>b) Three</li><li>c) Four</li><li>d) Five</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Four</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">35</span> What is the average volume of CSF in circulation in an adult at any one time?</div><ul class="mcq-options"><li>a) 50 ml</li><li>b) 150 ml</li><li>c) 250 ml</li><li>d) 500 ml</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> b) 150 ml</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">36</span> Approximately how much CSF is made per day in an adult?</div><ul class="mcq-options"><li>a) 150 ml</li><li>b) 250 ml</li><li>c) 500 ml</li><li>d) 1000 ml</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) 500 ml</div></div>
+        <div class="question-card"><div class="q-stem"><span class="q-num">37</span> From the lateral ventricles, CSF flows through the interventricular foramen to reach which structure?</div><ul class="mcq-options"><li>a) Cerebral aqueduct</li><li>b) Fourth ventricle</li><li>c) Third ventricle</li><li>d) Subarachnoid space</li></ul><div class="answer-box"><span class="ans-label">✓ answer:</span> c) Third ventricle</div></div>
+        <
